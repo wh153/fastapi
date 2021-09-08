@@ -7,8 +7,7 @@ from fastapi import FastAPI
 import uvicorn
 from fact import actual_recursive
 
-a=main.add(3,4)
-print(a)
+print("")
 '''
 assert == add(3,4), "add"
 assert 25 == exponent(5,2)
