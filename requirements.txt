@@ -1,3 +1,5 @@
 fastapi
 pylink
 uvicorn
+pytest
+pytest-cov
