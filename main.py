@@ -1,6 +1,8 @@
-from fastapi import FastAPI
-import uvicorn
 from fact import actual_recursive
+
+import uvicorn
+from fastapi import FastAPI
+
 
 app = FastAPI()
 

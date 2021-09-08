@@ -1,5 +1,5 @@
 fastapi
-pylink
+pylint
 uvicorn
 pytest
 pytest-cov
