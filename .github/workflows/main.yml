@@ -18,10 +18,10 @@ jobs:
         make install
     - name: Lint with pylint
       run: |
-        make -C lint
+        make lint
     - name: Test with pytest
       run: |
-        make -C test
+        make test
     - name: Format code
       run: |
-        make -C format
+        make format
