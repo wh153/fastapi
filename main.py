@@ -10,15 +10,15 @@ async def root():
     return {"message": "Welcome to this simple calculator, please choose the calculation you want with the input"}
 
 @app.get("/add/{num1}/{num2}")
-async def add(num1: int, num2: int):
+def add(num1: int, num2: int):
     """Add two numbers together"""
 
     total = num1 + num2
-    return total
+    return {"total": total}
     #return {"total": total}
 
 @app.get("/exponent/{num1}/{num2}")
-async def exponent(num1: int, num2: int):
+def exponent(num1: int, num2: int):
     """Get the power num2 of num1"""
     
         
@@ -26,14 +26,14 @@ async def exponent(num1: int, num2: int):
     return {"result": result}
     
 @app.get("/factorial/{num1}")
-async def factorial(num1: int):
+def factorial(num1: int):
     """Get the factorial of num1"""
     
     result = actual_recursive(num1)
     return {"result": result}
     
 @app.get("/fib/{n}")
-async def fib(n: int):
+def fib(n: int):
     """Get the nth element of Fibonacci sequence"""
     if n<= 0:
         return {"result": "Incorrect output"}
